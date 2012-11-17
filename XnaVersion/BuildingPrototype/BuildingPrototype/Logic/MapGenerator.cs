@@ -12,45 +12,65 @@ namespace MapEditor.Logic
     class MapGenerator
     {
         private FastPerlinNoise2D noiseMaker;
+        private float waterLevel; 
+        private float grassLevel;
+        private float shortMountainLevel;
 
         public MapGenerator()
         {
             noiseMaker = new FastPerlinNoise2D(DefaultSettings);
+
+            waterLevel = -0.3f;        
+            grassLevel = 0.3f;        
+            shortMountainLevel = 0.5f; 
         }
         public Map GenerateMap(Point size)
         {
             Map map = new Map(size);
             noiseMaker.Settings.size = new Vector2((int)size.X, (int)size.Y);
 
-            float[] noiseArray = new float[size.X * size.Y];
+            float[] heightNoise = new float[size.X * size.Y];
+            float[] treeNoise = new float[size.X * size.Y];
 
-            noiseMaker.FillWithPerlinNoise2D(noiseArray);
-            MakeMapFromNoise(map, noiseArray);
+            noiseMaker.FillWithPerlinNoise2D(heightNoise);
+            noiseMaker.Settings.startingPoint = new Vector2(map.WidthInTiles, map.HeightInTiles);
+            noiseMaker.FillWithPerlinNoise2D(treeNoise);
+            MakeMapFromNoise(map, heightNoise, treeNoise);
 
             return map;
         }
-        private void MakeMapFromNoise(Map map, float[] noiseArray)
+        private void MakeMapFromNoise(Map map, float[] heightNoise, float[] treeNoise)
         {
             for(int x = 0; x < map.WidthInTiles; x++)
             {
                 for(int y = 0; y < map.WidthInTiles; y++)
                 {
                     int index = x * map.WidthInTiles + y % map.WidthInTiles;
-                    TileType tile = GetTileFromNoise(noiseArray[index]);
+                    TileType tile = GetTileFromNoise(heightNoise[index]);
+                    if(HasTree(heightNoise[index], treeNoise[index]))
+                        tile = TileType.Tree;
+
                     map[x, y] = tile;
                 }
             }
         }
         private TileType GetTileFromNoise(float noise)
         {
-            if(noise < -0.3)
+            if(noise < waterLevel)
                 return TileType.Water;
-            else if(noise < 0.3)
+            else if(noise < grassLevel)
                 return TileType.Grass;
-            else if(noise < 0.5)
+            else if(noise < shortMountainLevel)
                 return TileType.MountainShort;
             else
                 return TileType.MountainTall;
+        }
+        private bool HasTree(float heightNoise, float treeNoise)
+        {
+            float treeLevel = 0.3f;
+            treeNoise -= Math.Abs(heightNoise);
+
+            return treeNoise > treeLevel;
         }
         private PerlinNoiseSettings2D DefaultSettings
         {
@@ -64,5 +84,27 @@ namespace MapEditor.Logic
                 return settings;
             }
         }
+        public float WaterLevel
+        {
+            get { return waterLevel; }
+            set { waterLevel = value; }
+        }
+        public float GrassLevel
+        {
+            get { return grassLevel; }
+            set { grassLevel = value; }
+        }
+        public float ShortMountainLevel
+        {
+            get { return shortMountainLevel; }
+            set { shortMountainLevel = value; }
+        }
+
+        public int Octaves { set { noiseMaker.Settings.octaves = value; } }        
+        public float FrequencyMulti { set { noiseMaker.Settings.frequencyMulti = value; } }
+        public float Persistence { set { noiseMaker.Settings.persistence = value; } }
+        public float Zoom { set { noiseMaker.Settings.zoom = value; } }
+        
+        
     }
 }

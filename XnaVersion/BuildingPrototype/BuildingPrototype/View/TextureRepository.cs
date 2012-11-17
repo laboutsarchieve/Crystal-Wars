@@ -109,7 +109,7 @@ namespace MapEditor.View
                     return mountianShort;
                 case TileType.MountainTall:
                     return mountianTall;
-                case TileType.Forest:
+                case TileType.Tree:
                     return forest;
                 case TileType.Water:
                     return waterCenter;

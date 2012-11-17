@@ -117,7 +117,7 @@ namespace MapEditor.Logic
                     return waterColor;
                 case TileType.Grass:
                     return grassColor;
-                case TileType.Forest:
+                case TileType.Tree:
                     return forestColor;
                 case TileType.MountainShort:
                     return mountianShortColor;
@@ -137,7 +137,7 @@ namespace MapEditor.Logic
             else if(color == grassColor)
                 return TileType.Grass;
             else if(color == forestColor)
-                return TileType.Forest;
+                return TileType.Tree;
             else if(color == waterColor)
                 return TileType.Water;
             if(color == new Color(0, 0, 0))

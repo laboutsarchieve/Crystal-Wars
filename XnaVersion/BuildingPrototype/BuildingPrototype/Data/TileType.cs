@@ -14,7 +14,7 @@ namespace MapEditor.Data
         Dirt,
         MountainShort,
         MountainTall,
-        Forest,
+        Tree,
         Water
     }
 }

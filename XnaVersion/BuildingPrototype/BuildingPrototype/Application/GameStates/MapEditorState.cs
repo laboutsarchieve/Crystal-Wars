@@ -5,6 +5,7 @@ using MapEditor.View;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using GameTools.Noise2D;
 
 namespace MapEditor.Application.GameStates
 {
@@ -45,7 +46,7 @@ namespace MapEditor.Application.GameStates
             tileSelectionNumbers = new Dictionary<Keys, TileType>();
             tileSelectionNumbers.Add(Keys.D1, TileType.Grass);
             tileSelectionNumbers.Add(Keys.D2, TileType.Water);
-            tileSelectionNumbers.Add(Keys.D3, TileType.Forest);
+            tileSelectionNumbers.Add(Keys.D3, TileType.Tree);
             tileSelectionNumbers.Add(Keys.D4, TileType.MountainShort);
             tileSelectionNumbers.Add(Keys.D5, TileType.MountainTall);
 
@@ -86,32 +87,32 @@ namespace MapEditor.Application.GameStates
                 DrawHelpText();
             }
         }
-        private void RandomMap()
-        {
-            actorDatabase.Clear();
-
-            MapGenerator mapGenerator = new MapGenerator();
-            MapSizeForm mapSizeForm = new MapSizeForm();
-            System.Windows.Forms.DialogResult result = mapSizeForm.ShowDialog();
-
-            if(result == System.Windows.Forms.DialogResult.OK)
-            {
-                map = mapGenerator.GenerateMap(mapSizeForm.MapSize);
-                drawer = new Drawer(spriteBatch, map, actorDatabase);
-                history = new ActionHistoryData();
-            }
-        }
         private bool NewMap()
         {
             actorDatabase.Clear();
 
-            MapSizeForm mapSizeForm = new MapSizeForm();
-            System.Windows.Forms.DialogResult result = mapSizeForm.ShowDialog();
+            RandomMapForm newMapForm = new RandomMapForm();
+            System.Windows.Forms.DialogResult result = newMapForm.ShowDialog();
 
             if(result == System.Windows.Forms.DialogResult.OK)
-            {
-                map = new Map(mapSizeForm.MapSize);
-                map.SetAllTilesTo(TileType.Grass);
+            {                
+                if(newMapForm.RandomMap)
+                {
+                    PerlinNoiseSettings2D settings = new PerlinNoiseSettings2D();                    
+                    MapGenerator generator = new MapGenerator( );
+
+                    generator.Octaves = newMapForm.Octaves;
+                    generator.FrequencyMulti = newMapForm.Frequency;
+                    generator.Persistence = newMapForm.Persistence;
+                    generator.Zoom = newMapForm.Zoom;
+
+                    map = generator.GenerateMap(newMapForm.MapSize);
+                }
+                else
+                { 
+                    map = new Map(newMapForm.MapSize);
+                    map.SetAllTilesTo(TileType.Grass);
+                }
                 drawer = new Drawer(spriteBatch, map, actorDatabase);
                 history = new ActionHistoryData();
 
@@ -159,8 +160,6 @@ namespace MapEditor.Application.GameStates
         {
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.N))
                 NewMap();
-            if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.R))
-                RandomMap();
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.L))
                 LoadMap();
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.P))
@@ -328,8 +327,7 @@ namespace MapEditor.Application.GameStates
             string[] helpText = {"1 - 5 Select Tile Type",
                                  "L = load",
                                  "P = save",
-                                 "R = Random Map",
-                                 "N = New Empty Map",
+                                 "N = New Map",
                                  "W,A,S,D = Move View",
                                  "Left Click = place tile",
                                  "Right Click = Use Brush",

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Xna.Framework;
+﻿using MapEditor.Data;
 using MapEditor.View;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MapEditor.Data;
 
 namespace MapEditor.Application.GameStates
 {
@@ -30,17 +26,14 @@ namespace MapEditor.Application.GameStates
         {
             spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);
         }
-
         public void LoadContent()
         {
             drawer = new Drawer(spriteBatch, map, actorDatabase);
         }
-
         public void Update(Microsoft.Xna.Framework.GameTime gameTime)
         {
             
         }
-
         public void Draw(Microsoft.Xna.Framework.GameTime gameTime)
         {
             

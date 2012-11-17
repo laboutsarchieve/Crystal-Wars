@@ -138,11 +138,11 @@
     <Compile Include="Data\Actor.cs" />
     <Compile Include="Data\ActorType.cs" />
     <Compile Include="Data\ActionHistoryData.cs" />
-    <Compile Include="View\MapSizeForm.cs">
+    <Compile Include="View\RandomMapForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\MapSizeForm.Designer.cs">
-      <DependentUpon>MapSizeForm.cs</DependentUpon>
+    <Compile Include="View\RandomMapForm.Designer.cs">
+      <DependentUpon>RandomMapForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\WaterEdgeType.cs" />
     <Compile Include="Logic\BuildingGenerator.cs" />
@@ -203,8 +203,8 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="View\MapSizeForm.resx">
-      <DependentUpon>MapSizeForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\RandomMapForm.resx">
+      <DependentUpon>RandomMapForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
