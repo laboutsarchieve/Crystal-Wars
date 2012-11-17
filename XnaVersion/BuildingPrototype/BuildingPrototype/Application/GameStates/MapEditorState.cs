@@ -108,8 +108,8 @@ namespace MapEditor.Application.GameStates
                     generator.Zoom = newMapForm.Zoom;
 
                     generator.WaterLevel = newMapForm.WaterLevel;
-                    generator.GrassLevel = newMapForm.WaterLevel;
-                    generator.ShortMountainLevel = newMapForm.WaterLevel;
+                    generator.GrassLevel = newMapForm.GrassLevel;
+                    generator.ShortMountainLevel = newMapForm.ShortMountianLevel;
                     generator.TreeLevel = newMapForm.TreeLevel;
 
                     map = generator.GenerateMap(newMapForm.MapSize);
