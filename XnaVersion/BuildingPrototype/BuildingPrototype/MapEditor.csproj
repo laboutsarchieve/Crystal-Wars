@@ -76,8 +76,7 @@
   <ItemGroup>
     <Reference Include="GameTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Release\GameTools.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>bin\common\GameTools.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
@@ -130,7 +129,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Application\ExtendedMouse.cs" />
     <Compile Include="Application\GameStates\GameState.cs" />
     <Compile Include="Application\GameStates\MapEditorState.cs" />
     <Compile Include="Application\GameStates\TurnbasedPrototypeState.cs" />
@@ -150,7 +148,6 @@
     <Compile Include="View\Drawers\TurnbasedPrototypeDrawer.cs" />
     <Compile Include="View\WaterEdgeType.cs" />
     <Compile Include="Logic\BuildingGenerator.cs" />
-    <Compile Include="Application\ExtendedKeyboard.cs" />
     <Compile Include="Logic\MapGenerator.cs" />
     <Compile Include="Logic\RoomFinder.cs" />
     <Compile Include="View\Repositories\FontRepository.cs" />

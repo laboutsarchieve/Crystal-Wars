@@ -14,6 +14,7 @@ using Microsoft.Xna.Framework;
 using MapEditor.View;
 using MapEditor.Data;
 using MapEditor.View.Repositories;
+using GameTools.Input;
 
 namespace MapEditor.Application
 {

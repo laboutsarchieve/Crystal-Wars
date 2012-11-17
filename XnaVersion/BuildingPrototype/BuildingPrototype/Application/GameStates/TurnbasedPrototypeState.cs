@@ -6,6 +6,7 @@ using MapEditor.Logic;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 using MapEditor.View.Drawers;
+using GameTools.Input;
 
 namespace MapEditor.Application.GameStates
 {
@@ -24,13 +25,13 @@ namespace MapEditor.Application.GameStates
         public TurnbasedPrototypeState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics, Map map)
         {
             this.mainGame = mainGame;
-            this.graphics = graphics; 
-            this.map = map;        
+            this.graphics = graphics;
+            this.map = map;
         }
         public TurnbasedPrototypeState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics)
         {
             this.mainGame = mainGame;
-            this.graphics = graphics; 
+            this.graphics = graphics;
         }
         public void Initialize()
         {
@@ -39,7 +40,7 @@ namespace MapEditor.Application.GameStates
             actorDatabase = new ActorDatabase();
             actorDatabase.AddActor(new Actor(Vector2.One, new Vector2(32,32), 10, ActorType.SoldierOne));
 
-            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);            
+            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);
         }
         public void LoadContent()
         {

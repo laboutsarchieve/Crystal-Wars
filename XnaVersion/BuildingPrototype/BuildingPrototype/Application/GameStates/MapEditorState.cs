@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using GameTools.Noise2D;
 using MapEditor.View.Drawers;
+using GameTools.Input;
 
 namespace MapEditor.Application.GameStates
 {

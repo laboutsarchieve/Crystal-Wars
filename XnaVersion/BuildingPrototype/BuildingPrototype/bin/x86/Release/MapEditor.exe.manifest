@@ -93,26 +93,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GameTools.dll" size="26624">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GameTools.dll" size="28160">
       <assemblyIdentity name="GameTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>GVVYmZ1V2V0QR7vEUDENyVT64cs=</dsig:DigestValue>
+        <dsig:DigestValue>xLP0Xa+DRNExVHABySQ+LJa2m3Q=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MapEditor.exe" size="52736">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MapEditor.exe" size="51200">
       <assemblyIdentity name="MapEditor" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>FiCUFasWF1kFiFZeFofkcS2GgMY=</dsig:DigestValue>
+        <dsig:DigestValue>F56tpgtsk+0FWT+UMmSCIk7JDxs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
