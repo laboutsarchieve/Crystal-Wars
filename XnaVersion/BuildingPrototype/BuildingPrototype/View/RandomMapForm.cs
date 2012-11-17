@@ -242,6 +242,11 @@ namespace MapEditor.View
         public float Zoom
         {
             get { return zoom; }            
+        }
+
+        private void WaterLevelBox_TextChanged(object sender, EventArgs e)
+        {
+
         }   
     }
 }

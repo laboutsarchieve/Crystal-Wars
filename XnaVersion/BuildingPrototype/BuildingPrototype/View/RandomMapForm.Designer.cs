@@ -126,7 +126,7 @@
             // 
             // XSizeBox
             // 
-            this.XSizeBox.Location = new System.Drawing.Point(132, 48);
+            this.XSizeBox.Location = new System.Drawing.Point(124, 48);
             this.XSizeBox.Name = "XSizeBox";
             this.XSizeBox.Size = new System.Drawing.Size(100, 20);
             this.XSizeBox.TabIndex = 8;
@@ -135,7 +135,7 @@
             // 
             // YSizeBox
             // 
-            this.YSizeBox.Location = new System.Drawing.Point(263, 48);
+            this.YSizeBox.Location = new System.Drawing.Point(255, 48);
             this.YSizeBox.Name = "YSizeBox";
             this.YSizeBox.Size = new System.Drawing.Size(100, 20);
             this.YSizeBox.TabIndex = 9;
@@ -154,7 +154,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(238, 51);
+            this.label6.Location = new System.Drawing.Point(230, 51);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(19, 13);
             this.label6.TabIndex = 11;
@@ -162,7 +162,7 @@
             // 
             // OkButton
             // 
-            this.OkButton.Location = new System.Drawing.Point(157, 346);
+            this.OkButton.Location = new System.Drawing.Point(182, 338);
             this.OkButton.Name = "OkButton";
             this.OkButton.Size = new System.Drawing.Size(75, 23);
             this.OkButton.TabIndex = 12;
@@ -223,7 +223,8 @@
             this.WaterLevelBox.Name = "WaterLevelBox";
             this.WaterLevelBox.Size = new System.Drawing.Size(100, 20);
             this.WaterLevelBox.TabIndex = 17;
-            this.WaterLevelBox.Text = "0.0";
+            this.WaterLevelBox.Text = "-3.0";
+            this.WaterLevelBox.TextChanged += new System.EventHandler(this.WaterLevelBox_TextChanged);
             this.WaterLevelBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WaterLevelBox_KeyDown);
             // 
             // GrassLevelBox
