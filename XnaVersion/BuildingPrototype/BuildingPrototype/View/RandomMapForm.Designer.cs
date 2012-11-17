@@ -223,7 +223,7 @@
             this.WaterLevelBox.Name = "WaterLevelBox";
             this.WaterLevelBox.Size = new System.Drawing.Size(100, 20);
             this.WaterLevelBox.TabIndex = 17;
-            this.WaterLevelBox.Text = "-3.0";
+            this.WaterLevelBox.Text = "-0.3";
             this.WaterLevelBox.TextChanged += new System.EventHandler(this.WaterLevelBox_TextChanged);
             this.WaterLevelBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WaterLevelBox_KeyDown);
             // 
