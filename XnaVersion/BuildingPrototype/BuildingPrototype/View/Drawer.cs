@@ -18,7 +18,7 @@ namespace MapEditor.View
 
         public Drawer(SpriteBatch spriteBatch, Map map, ActorDatabase actorDatabase)
         {
-            this.spriteBatch = spriteBatch;
+            this.spriteBatch = spriteBatch; 
             this.map = map;
             this.actorDatabase = actorDatabase;
         }
@@ -165,8 +165,8 @@ namespace MapEditor.View
         }
         private void DrawTextureAtMapLocation(Texture2D tileTexture, Point position, float rotation)
         {
-            Vector2 posAsVector = GlobalSettings.ScaledTileSize * new Vector2(position.X, position.Y) - upperLeftOfView;
-            DrawTexture(tileTexture, posAsVector, rotation);
+            Vector2 drawLocation = GlobalSettings.ScaledTileSize * new Vector2(position.X, position.Y) - upperLeftOfView;            
+            DrawTexture(tileTexture, drawLocation, rotation);
         }
         private void DrawTexture(Texture2D tileTexture, Vector2 position, float rotation)
         {

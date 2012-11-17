@@ -220,6 +220,17 @@ namespace MapEditor.Application
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.Down))
                 GlobalSettings.Scale -= 0.05f;
 
+            if(ExtendedKeyboard.IsKeyDown(Keys.D1))
+                selectedTile = tileSelectionNumbers[Keys.D1];
+            if(ExtendedKeyboard.IsKeyDown(Keys.D2))
+                selectedTile = tileSelectionNumbers[Keys.D2];
+            if(ExtendedKeyboard.IsKeyDown(Keys.D3))
+                selectedTile = tileSelectionNumbers[Keys.D3];
+            if(ExtendedKeyboard.IsKeyDown(Keys.D4))
+                selectedTile = tileSelectionNumbers[Keys.D4];
+            if(ExtendedKeyboard.IsKeyDown(Keys.D5))
+                selectedTile = tileSelectionNumbers[Keys.D5];
+
             tillNextHistoryAction -= gameTime.ElapsedGameTime.Milliseconds;
         }
         private void ProcessMovementInput()
@@ -234,18 +245,7 @@ namespace MapEditor.Application
             if(ExtendedKeyboard.IsKeyDown(Keys.S))
                 movement.Y++;
             if(ExtendedKeyboard.IsKeyDown(Keys.D))
-                movement.X++;
-
-            if(ExtendedKeyboard.IsKeyDown(Keys.D1))
-                selectedTile = tileSelectionNumbers[Keys.D1];
-            if(ExtendedKeyboard.IsKeyDown(Keys.D2))
-                selectedTile = tileSelectionNumbers[Keys.D2];
-            if(ExtendedKeyboard.IsKeyDown(Keys.D3))
-                selectedTile = tileSelectionNumbers[Keys.D3];
-            if(ExtendedKeyboard.IsKeyDown(Keys.D4))
-                selectedTile = tileSelectionNumbers[Keys.D4];
-            if(ExtendedKeyboard.IsKeyDown(Keys.D5))
-                selectedTile = tileSelectionNumbers[Keys.D5];
+                movement.X++;            
 
             drawer.MoveView(GlobalSettings.ScaledTileSize * movement);
         }
