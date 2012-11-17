@@ -133,17 +133,21 @@
     <Compile Include="Application\ExtendedMouse.cs" />
     <Compile Include="Application\GameStates\GameState.cs" />
     <Compile Include="Application\GameStates\MapEditorState.cs" />
-    <Compile Include="Application\GameStates\TurnBasedPrototype.cs" />
+    <Compile Include="Application\GameStates\TurnbasedPrototypeState.cs" />
     <Compile Include="Data\Action.cs" />
     <Compile Include="Data\Actor.cs" />
+    <Compile Include="Data\ActorInfo.cs" />
     <Compile Include="Data\ActorType.cs" />
     <Compile Include="Data\ActionHistoryData.cs" />
+    <Compile Include="Logic\Pathfinder.cs" />
+    <Compile Include="View\MapEditorDrawer.cs" />
     <Compile Include="View\RandomMapForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\RandomMapForm.Designer.cs">
       <DependentUpon>RandomMapForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\TurnbasedPrototypeDrawer.cs" />
     <Compile Include="View\WaterEdgeType.cs" />
     <Compile Include="Logic\BuildingGenerator.cs" />
     <Compile Include="Application\ExtendedKeyboard.cs" />

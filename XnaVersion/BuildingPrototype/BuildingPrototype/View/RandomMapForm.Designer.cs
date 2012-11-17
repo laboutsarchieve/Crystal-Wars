@@ -130,7 +130,7 @@
             this.XSizeBox.Name = "XSizeBox";
             this.XSizeBox.Size = new System.Drawing.Size(100, 20);
             this.XSizeBox.TabIndex = 8;
-            this.XSizeBox.Text = "50";
+            this.XSizeBox.Text = "100";
             this.XSizeBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.XSizeBox_KeyDown);
             // 
             // YSizeBox
@@ -139,7 +139,7 @@
             this.YSizeBox.Name = "YSizeBox";
             this.YSizeBox.Size = new System.Drawing.Size(100, 20);
             this.YSizeBox.TabIndex = 9;
-            this.YSizeBox.Text = "50";
+            this.YSizeBox.Text = "100";
             this.YSizeBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.YSizeBox_KeyDown);
             // 
             // label5
@@ -224,7 +224,6 @@
             this.WaterLevelBox.Size = new System.Drawing.Size(100, 20);
             this.WaterLevelBox.TabIndex = 17;
             this.WaterLevelBox.Text = "0.0";
-            this.WaterLevelBox.TextChanged += new System.EventHandler(this.WaterLevelBox_TextChanged);
             this.WaterLevelBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.WaterLevelBox_KeyDown);
             // 
             // GrassLevelBox

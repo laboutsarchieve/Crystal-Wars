@@ -16,7 +16,7 @@ namespace MapEditor.Application.GameStates
         private SpriteBatch spriteBatch;
         private ActorDatabase actorDatabase;
         private Map map;
-        private Drawer drawer;
+        private MapEditorDrawer drawer;
         private TileType selectedTile;
         private Dictionary<Keys, TileType> tileSelectionNumbers;
         private ActionHistoryData history;
@@ -25,22 +25,15 @@ namespace MapEditor.Application.GameStates
         private int betweenHistoryAction = 60;
         private bool showHelp;
 
-        Game mainGame;
+        PrototypeAppliction mainGame;
 
-        public MapEditorState(Game mainGame, GraphicsDeviceManager graphics)
+        public MapEditorState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics)
         {
             this.mainGame = mainGame;
             this.graphics = graphics;            
         }
         public void Initialize()
         {
-            mainGame.IsMouseVisible = true;
-            GlobalSettings.Resolution = new Vector2(1200, 800);
-
-            graphics.PreferredBackBufferWidth = (int)GlobalSettings.Resolution.X;
-            graphics.PreferredBackBufferHeight = (int)GlobalSettings.Resolution.Y;
-            graphics.ApplyChanges();
-
             selectedTile = TileType.Grass;
 
             tileSelectionNumbers = new Dictionary<Keys, TileType>();
@@ -58,16 +51,14 @@ namespace MapEditor.Application.GameStates
 
             map = new Map(Point.Zero);
             actorDatabase = new ActorDatabase();
-            drawer = new Drawer(spriteBatch, map, actorDatabase);
+            drawer = new MapEditorDrawer(spriteBatch, map);
 
-            bool enteredSize = NewMap();
-            if(!enteredSize)
+            bool enteredInfo = NewMap();
+            if(!enteredInfo)
                 mainGame.Exit();
         }
         public void Update(GameTime gameTime)
-        {
-            ExtendedKeyboard.Update();
-            ExtendedMouse.Update();
+        {   
             if(mainGame.IsActive)
             {
                 PollKeyboard(gameTime);
@@ -78,10 +69,11 @@ namespace MapEditor.Application.GameStates
         {
             mainGame.GraphicsDevice.Clear(Color.Black);
 
-            drawer.Draw(selectedTile);
+            drawer.Draw();
             drawer.DrawString("Brush Size: " + brushSize, new Vector2(0, GlobalSettings.TileSize), Color.Black, Color.White * 0.5f);
 
-            drawer.DrawTileSelection(tileSelectionNumbers);
+            drawer.DrawTileSelection(tileSelectionNumbers, selectedTile);
+
             if(showHelp)
             {
                 DrawHelpText();
@@ -90,7 +82,7 @@ namespace MapEditor.Application.GameStates
         private bool NewMap()
         {
             actorDatabase.Clear();
-
+            
             RandomMapForm newMapForm = new RandomMapForm();
             System.Windows.Forms.DialogResult result = newMapForm.ShowDialog();
 
@@ -113,7 +105,7 @@ namespace MapEditor.Application.GameStates
                     map = new Map(newMapForm.MapSize);
                     map.SetAllTilesTo(TileType.Grass);
                 }
-                drawer = new Drawer(spriteBatch, map, actorDatabase);
+                drawer = new MapEditorDrawer(spriteBatch, map);
                 history = new ActionHistoryData();
 
                 return true;
@@ -150,6 +142,9 @@ namespace MapEditor.Application.GameStates
         {
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.Escape))
                 EscapeExit();
+
+            if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.M))
+                mainGame.ChangeState(new TurnbasedPrototypeState(mainGame, graphics, map));
 
             if(ExtendedKeyboard.IsKeyDown(Keys.H))
                 showHelp = true;

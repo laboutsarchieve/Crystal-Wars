@@ -8,7 +8,7 @@ namespace MapEditor
     {
         static void Main(string[] args)
         {
-            using(PrototypeApp game = new PrototypeApp())
+            using(PrototypeAppliction game = new PrototypeAppliction())
             {
                 game.Run();
             }

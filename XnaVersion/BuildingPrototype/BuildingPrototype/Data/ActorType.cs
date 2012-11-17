@@ -7,6 +7,7 @@ namespace MapEditor.Data
 {
     enum ActorType
     {
-        SoldierOne
+        SoldierOne,
+        Dummy
     }
 }

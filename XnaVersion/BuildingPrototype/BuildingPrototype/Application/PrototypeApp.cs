@@ -13,15 +13,16 @@
 using MapEditor.Application.GameStates;
 using Microsoft.Xna.Framework;
 using MapEditor.View;
+using MapEditor.Data;
 
 namespace MapEditor.Application
 {
-    class PrototypeApp : Microsoft.Xna.Framework.Game
+    class PrototypeAppliction : Microsoft.Xna.Framework.Game
     {
         private GraphicsDeviceManager graphics;        
         private GameState currentState;
 
-        public PrototypeApp()
+        public PrototypeAppliction()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -30,6 +31,13 @@ namespace MapEditor.Application
         }
         protected override void Initialize()
         {
+            IsMouseVisible = true;
+            GlobalSettings.Resolution = new Vector2(1200, 800);
+
+            graphics.PreferredBackBufferWidth = (int)GlobalSettings.Resolution.X;
+            graphics.PreferredBackBufferHeight = (int)GlobalSettings.Resolution.Y;
+            graphics.ApplyChanges();
+
             currentState.Initialize();
 
             base.Initialize();
@@ -45,6 +53,9 @@ namespace MapEditor.Application
         }
         protected override void Update(GameTime gameTime)
         {
+            ExtendedKeyboard.Update();
+            ExtendedMouse.Update();
+
             currentState.Update(gameTime);
         }
         protected override void Draw(GameTime gameTime)

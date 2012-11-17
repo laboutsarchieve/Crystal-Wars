@@ -11,8 +11,10 @@ namespace MapEditor.Data
         private Vector2 position;
         private Vector2 size;
         private int maxMove;
-        private HashSet<TileType> slowTiles;
+        private Dictionary<TileType, int> TileCost;
         private ActorType type;
+
+        private static Actor dummyActor = new Actor(-Vector2.One, Vector2.Zero, 0, ActorType.Dummy);
 
         public Actor(Vector2 position, Vector2 size, int maxMove, ActorType actorType)
         {
@@ -20,6 +22,8 @@ namespace MapEditor.Data
             this.size = size;
             this.type = actorType;
             this.maxMove = maxMove;
+
+            TileCost = ActorInfo.GetTileCosts(actorType);
         }
         public Vector2 Position
         {
@@ -35,15 +39,25 @@ namespace MapEditor.Data
         {
             get { return maxMove; }
         }
-        internal HashSet<TileType> SlowTiles
-        {
-            get { return slowTiles; }
-            set { slowTiles = value; }
-        }
         internal ActorType Type
         {
             get { return type; }
             set { type = value; }
+        }
+        public static Actor DummyActor
+        {
+            get
+            {
+                return dummyActor;
+            }
+        }
+
+        internal int MovementOn(TileType tile)
+        {
+            if(!TileCost.ContainsKey(tile))
+                return 1000;
+            else
+                return TileCost[tile];
         }
     }
 }

@@ -15,6 +15,16 @@ namespace MapEditor.Data
             actors = new List<Actor>();
             Clear();
         }
+        public Actor GetActorAt(Vector2 location)
+        {
+            foreach(Actor actor in actors)
+            {
+                if(actor.Position == location)
+                    return actor;
+            }
+
+            return Actor.DummyActor;
+        }
         public void AddActor(Actor actor)
         {
             actors.Add(actor);
