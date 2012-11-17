@@ -107,6 +107,11 @@ namespace MapEditor.Application.GameStates
                     generator.Persistence = newMapForm.Persistence;
                     generator.Zoom = newMapForm.Zoom;
 
+                    generator.WaterLevel = newMapForm.WaterLevel;
+                    generator.GrassLevel = newMapForm.WaterLevel;
+                    generator.ShortMountainLevel = newMapForm.WaterLevel;
+                    generator.TreeLevel = newMapForm.TreeLevel;
+
                     map = generator.GenerateMap(newMapForm.MapSize);
                 }
                 else

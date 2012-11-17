@@ -15,6 +15,7 @@ namespace MapEditor.Logic
         private float waterLevel; 
         private float grassLevel;
         private float shortMountainLevel;
+        private float treeLevel;
 
         public MapGenerator()
         {
@@ -22,7 +23,8 @@ namespace MapEditor.Logic
 
             waterLevel = -0.3f;        
             grassLevel = 0.3f;        
-            shortMountainLevel = 0.5f; 
+            shortMountainLevel = 0.5f;
+            treeLevel = 0.3f;
         }
         public Map GenerateMap(Point size)
         {
@@ -66,8 +68,7 @@ namespace MapEditor.Logic
                 return TileType.MountainTall;
         }
         private bool HasTree(float heightNoise, float treeNoise)
-        {
-            float treeLevel = 0.3f;
+        {   
             treeNoise -= Math.Abs(heightNoise);
 
             return treeNoise > treeLevel;
@@ -99,11 +100,17 @@ namespace MapEditor.Logic
             get { return shortMountainLevel; }
             set { shortMountainLevel = value; }
         }
+        public float TreeLevel
+        {
+            get { return treeLevel; }
+            set { treeLevel = value; }
+        }
 
         public int Octaves { set { noiseMaker.Settings.octaves = value; } }        
         public float FrequencyMulti { set { noiseMaker.Settings.frequencyMulti = value; } }
         public float Persistence { set { noiseMaker.Settings.persistence = value; } }
         public float Zoom { set { noiseMaker.Settings.zoom = value; } }
+        
         
         
     }
