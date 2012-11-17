@@ -10,23 +10,13 @@
 ////////////////////////////////////////////////////////////////////
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using MapEditor.Application.GameStates;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
-using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
-using MapEditor.Data;
 using MapEditor.View;
-using MapEditor.Logic;
 
 namespace MapEditor.Application
 {
-    public class PrototypeApp : Microsoft.Xna.Framework.Game
+    class PrototypeApp : Microsoft.Xna.Framework.Game
     {
         private GraphicsDeviceManager graphics;        
         private GameState currentState;
@@ -46,6 +36,9 @@ namespace MapEditor.Application
         }
         protected override void LoadContent()
         {
+            TextureRepository.Initalize(Content, GraphicsDevice);
+            FontRepository.Initalize(Content);
+
             currentState.LoadContent();
 
             base.LoadContent();
@@ -58,6 +51,12 @@ namespace MapEditor.Application
         {
             currentState.Draw(gameTime);
             base.Draw(gameTime);
+        }
+        public void ChangeState( GameState newState )
+        {
+            currentState = newState;
+            Initialize( );
+            LoadContent( );
         }
     }
 }

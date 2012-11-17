@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
+using MapEditor.Data;
+using MapEditor.Logic;
+using MapEditor.View;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using MapEditor.Data;
-using MapEditor.View;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Content;
-using MapEditor.Logic;
 
-namespace MapEditor.Application
+namespace MapEditor.Application.GameStates
 {
     class MapEditorState 
         : GameState
@@ -27,13 +23,13 @@ namespace MapEditor.Application
         private int tillNextHistoryAction;
         private int betweenHistoryAction = 60;
         private bool showHelp;
+
         Game mainGame;
 
         public MapEditorState(Game mainGame, GraphicsDeviceManager graphics)
         {
             this.mainGame = mainGame;
-            this.graphics = graphics;
-            mainGame.Content.RootDirectory = "Content";
+            this.graphics = graphics;            
         }
         public void Initialize()
         {
@@ -57,9 +53,7 @@ namespace MapEditor.Application
         }
         public void LoadContent()
         {
-            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);
-            TextureRepository.Initalize(mainGame.Content, mainGame.GraphicsDevice);
-            FontRepository.Initalize(mainGame.Content);
+            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);            
 
             map = new Map(Point.Zero);
             actorDatabase = new ActorDatabase();

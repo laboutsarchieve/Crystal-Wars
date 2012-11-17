@@ -131,8 +131,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\ExtendedMouse.cs" />
-    <Compile Include="Application\GameState.cs" />
-    <Compile Include="Application\MapEditorState.cs" />
+    <Compile Include="Application\GameStates\GameState.cs" />
+    <Compile Include="Application\GameStates\MapEditorState.cs" />
+    <Compile Include="Application\GameStates\TurnBasedPrototype.cs" />
     <Compile Include="Data\Action.cs" />
     <Compile Include="Data\Actor.cs" />
     <Compile Include="Data\ActorType.cs" />
