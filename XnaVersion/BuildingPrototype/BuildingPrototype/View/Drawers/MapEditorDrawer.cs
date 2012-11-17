@@ -6,8 +6,9 @@ using MapEditor.Data;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MapEditor.View.Repositories;
 
-namespace MapEditor.View
+namespace MapEditor.View.Drawers
 {
     class MapEditorDrawer : Drawer
     {

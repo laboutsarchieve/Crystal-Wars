@@ -9,11 +9,11 @@
 //                                                                //
 ////////////////////////////////////////////////////////////////////
 
-
 using MapEditor.Application.GameStates;
 using Microsoft.Xna.Framework;
 using MapEditor.View;
 using MapEditor.Data;
+using MapEditor.View.Repositories;
 
 namespace MapEditor.Application
 {
@@ -66,8 +66,7 @@ namespace MapEditor.Application
         public void ChangeState( GameState newState )
         {
             currentState = newState;
-            Initialize( );
-            LoadContent( );
+            Initialize( );            
         }
     }
 }

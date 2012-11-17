@@ -5,6 +5,7 @@ using Microsoft.Xna.Framework.Graphics;
 using MapEditor.Logic;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
+using MapEditor.View.Drawers;
 
 namespace MapEditor.Application.GameStates
 {
@@ -24,25 +25,20 @@ namespace MapEditor.Application.GameStates
         {
             this.mainGame = mainGame;
             this.graphics = graphics; 
-            this.map = map;
-
-            selectedActor = Actor.DummyActor;
-            movementHighlight = new List<Point>( );
-            actorDatabase = new ActorDatabase();
-            actorDatabase.AddActor(new Actor(Vector2.One, new Vector2(32,32), 10, ActorType.SoldierOne));            
+            this.map = map;        
         }
         public TurnbasedPrototypeState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics)
         {
             this.mainGame = mainGame;
             this.graphics = graphics; 
-            
+        }
+        public void Initialize()
+        {
             selectedActor = Actor.DummyActor;
             movementHighlight = new List<Point>( );
             actorDatabase = new ActorDatabase();
             actorDatabase.AddActor(new Actor(Vector2.One, new Vector2(32,32), 10, ActorType.SoldierOne));
-        }
-        public void Initialize()
-        {
+
             spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);            
         }
         public void LoadContent()
@@ -78,8 +74,12 @@ namespace MapEditor.Application.GameStates
         }
         private void ProcessSystemInput()
         {
-            if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.M))
-                mainGame.ChangeState(new MapEditorState(mainGame, graphics));
+            if(ExtendedKeyboard.IsKeyDown(Keys.LeftControl) && ExtendedKeyboard.IsKeyDownAfterUp(Keys.U))
+            { 
+                MapEditorState mapEditor = new MapEditorState(mainGame, graphics, map);
+                mainGame.ChangeState(mapEditor);
+                mapEditor.UpperLeftOfView = drawer.UpperLeftOfView;
+            }
         }
         private void ProcessMovementInput()
         {
@@ -110,7 +110,6 @@ namespace MapEditor.Application.GameStates
                 selectedActor = actorDatabase.GetActorAt(mouseTileVector);   
                 UpdateMovementHighlight( );
             }
-
             if(ExtendedMouse.MiddleClickDownAfterUp())
             { 
                 MoveActor(selectedActor, mouseTileVector);
@@ -130,8 +129,12 @@ namespace MapEditor.Application.GameStates
             drawer.Draw();
             drawer.HighlightPoints(movementHighlight, Color.Blue);
 
-            string position = "actor: " + actorDatabase.Actors[0].Position.X + ", " + actorDatabase.Actors[0].Position.Y;
-            drawer.DrawString(position, Vector2.Zero, Color.Black, Color.Red);
+            string positionString = "Actor: " + actorDatabase.Actors[0].Position.X + ", " + actorDatabase.Actors[0].Position.Y;
+            drawer.DrawString(positionString, Vector2.Zero, Color.Black, Color.Red);
+        }
+        public Vector2 UpperLeftOfView
+        {
+            set{ drawer.MoveView( value - drawer.UpperLeftOfView); }
         }
     }
 }

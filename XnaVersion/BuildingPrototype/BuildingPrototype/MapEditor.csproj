@@ -140,32 +140,32 @@
     <Compile Include="Data\ActorType.cs" />
     <Compile Include="Data\ActionHistoryData.cs" />
     <Compile Include="Logic\Pathfinder.cs" />
-    <Compile Include="View\MapEditorDrawer.cs" />
+    <Compile Include="View\Drawers\MapEditorDrawer.cs" />
     <Compile Include="View\RandomMapForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\RandomMapForm.Designer.cs">
       <DependentUpon>RandomMapForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TurnbasedPrototypeDrawer.cs" />
+    <Compile Include="View\Drawers\TurnbasedPrototypeDrawer.cs" />
     <Compile Include="View\WaterEdgeType.cs" />
     <Compile Include="Logic\BuildingGenerator.cs" />
     <Compile Include="Application\ExtendedKeyboard.cs" />
     <Compile Include="Logic\MapGenerator.cs" />
     <Compile Include="Logic\RoomFinder.cs" />
-    <Compile Include="View\FontRepository.cs" />
+    <Compile Include="View\Repositories\FontRepository.cs" />
     <Compile Include="Data\GlobalSettings.cs" />
     <Compile Include="Data\Map.cs" />
-    <Compile Include="View\Drawer.cs" />
+    <Compile Include="View\Drawers\Drawer.cs" />
     <Compile Include="Logic\MapFileManager.cs" />
     <Compile Include="Data\ActorDatabase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="Application\PrototypeApp.cs" />
+    <Compile Include="Application\PrototypeApplication.cs" />
     <Compile Include="Data\Room.cs" />
     <Compile Include="Data\Side.cs" />
     <Compile Include="Data\TileType.cs" />
-    <Compile Include="View\TextureRepository.cs" />
+    <Compile Include="View\Repositories\TextureRepository.cs" />
     <Compile Include="View\WaterLogic.cs" />
   </ItemGroup>
   <ItemGroup>

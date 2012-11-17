@@ -6,6 +6,7 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using GameTools.Noise2D;
+using MapEditor.View.Drawers;
 
 namespace MapEditor.Application.GameStates
 {
@@ -27,6 +28,12 @@ namespace MapEditor.Application.GameStates
 
         PrototypeAppliction mainGame;
 
+        public MapEditorState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics, Map map)
+        {
+            this.mainGame = mainGame;
+            this.graphics = graphics;  
+            this.map = map;
+        }
         public MapEditorState(PrototypeAppliction mainGame, GraphicsDeviceManager graphics)
         {
             this.mainGame = mainGame;
@@ -47,15 +54,16 @@ namespace MapEditor.Application.GameStates
         }
         public void LoadContent()
         {
-            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);            
-
-            map = new Map(Point.Zero);
+            spriteBatch = new SpriteBatch(mainGame.GraphicsDevice);                        
             actorDatabase = new ActorDatabase();
             drawer = new MapEditorDrawer(spriteBatch, map);
 
-            bool enteredInfo = NewMap();
-            if(!enteredInfo)
-                mainGame.Exit();
+            if(map == null)
+            { 
+                bool enteredInfo = NewMap();
+                if(!enteredInfo)
+                    mainGame.Exit();
+            }
         }
         public void Update(GameTime gameTime)
         {   
@@ -143,8 +151,12 @@ namespace MapEditor.Application.GameStates
             if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.Escape))
                 EscapeExit();
 
-            if(ExtendedKeyboard.IsKeyDownAfterUp(Keys.M))
-                mainGame.ChangeState(new TurnbasedPrototypeState(mainGame, graphics, map));
+            if(ExtendedKeyboard.IsKeyDown(Keys.LeftControl) && ExtendedKeyboard.IsKeyDownAfterUp(Keys.U))
+            { 
+                TurnbasedPrototypeState mapEditor = new TurnbasedPrototypeState(mainGame, graphics, map);
+                mainGame.ChangeState(mapEditor);
+                mapEditor.UpperLeftOfView = drawer.UpperLeftOfView;
+            }
 
             if(ExtendedKeyboard.IsKeyDown(Keys.H))
                 showHelp = true;
@@ -323,6 +335,7 @@ namespace MapEditor.Application.GameStates
                                  "L = load",
                                  "P = save",
                                  "N = New Map",
+                                 "Ctrl+U = Switch to Unit Mode",
                                  "W,A,S,D = Move View",
                                  "Left Click = place tile",
                                  "Right Click = Use Brush",
@@ -336,6 +349,10 @@ namespace MapEditor.Application.GameStates
 
 
             drawer.DrawStrings(helpText, new Vector2(GlobalSettings.Resolution.X, 0), Color.Black, Color.White * 0.8f);
+        }
+        public Vector2 UpperLeftOfView
+        {
+            set{ drawer.MoveView( value - drawer.UpperLeftOfView); }
         }
     }
 }

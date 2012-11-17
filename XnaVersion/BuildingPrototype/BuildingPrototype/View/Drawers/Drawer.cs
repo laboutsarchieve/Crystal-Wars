@@ -4,22 +4,22 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
-using TurnedBasedExample.Data;
+using MapEditor.Data;
 using Microsoft.Xna.Framework.Input;
-using MapFileHandler;
+using MapEditor.View.Repositories;
 
-namespace TurnedBasedExample.View
+namespace MapEditor.View.Drawers
 {
     class Drawer
     {
-        private SpriteBatch spriteBatch;
-        private Map map;
-        private Vector2 upperLeftOfView;
+        protected SpriteBatch spriteBatch;
+        protected Map map;        
+        protected Vector2 upperLeftOfView;
 
         public Drawer(SpriteBatch spriteBatch, Map map)
         {
             this.spriteBatch = spriteBatch; 
-            this.map = map;
+            this.map = map;            
         }
         public void CenterView(Vector2 position)
         {
@@ -69,67 +69,20 @@ namespace TurnedBasedExample.View
             spriteBatch.DrawString(FontRepository.debugFont, message, position, color);
             spriteBatch.End();
         }
-        public void DrawRectangle(Rectangle rectangle, Color color)
+        protected void DrawRectangle(Rectangle rectangle, Color color)
         {
             spriteBatch.Draw(TextureRepository.Pixel,
                              rectangle,
                              color);
         }
-        internal void DrawTileSelection(Dictionary<Keys, TileType> tileSelectionNumbers)
-        {
-            float left = GlobalSettings.Resolution.X / 2 - tileSelectionNumbers.Count/2.0f * GlobalSettings.TileSize;
-            float top = GlobalSettings.Resolution.Y - GlobalSettings.TileSize;
-            Vector2 topLeft = new Vector2(left, top);
-
-            Keys[] selectionKeys = tileSelectionNumbers.Keys.ToArray( );
-            spriteBatch.Begin();
-            for(int index = 0; index < selectionKeys.Length; index++)
-            {
-                Keys key = selectionKeys[index];
-                TileType tile = tileSelectionNumbers[key];
-                DrawRectangle(new Rectangle((int)left + index * (GlobalSettings.TileSize + 2) - 1,
-                                            (int)top - 1,
-                                            (int)GlobalSettings.TileSize + 2,
-                                            (int)GlobalSettings.TileSize + 2),
-                              Color.Black * 0.8f);
-                DrawUnscaledTexture(TextureRepository.GetTileTexture(tile), topLeft + index * (GlobalSettings.TileSize + 2) * Vector2.UnitX, 0.0f);
-            }
-            spriteBatch.End();
-        }
-        public void Draw(TileType selectedTile)
+        public virtual void Draw( )
         {
             if(map != null)
             {
                 spriteBatch.Begin();
-                DrawMap();
-                DrawActors();
-                DrawHud(selectedTile);
+                DrawMap();                        
                 spriteBatch.End();
             }
-        }
-        private void DrawActors()
-        {
-            List<Actor> actorsOnMap = actorDatabase.Actors;
-
-            foreach(Actor actor in actorsOnMap)
-            {
-                Texture2D actorTexture = TextureRepository.GetActorTexture(actor.Type);
-                spriteBatch.Draw(actorTexture,
-                             GlobalSettings.ScaledTileSize * actor.Position - upperLeftOfView,
-                             null,
-                             Color.White,
-                             0.0f,
-                             GlobalSettings.ScaledTileSize * new Vector2(0.5f, 0.5f),
-                             GlobalSettings.Scale,
-                             SpriteEffects.None,
-                             0);
-            }
-        }
-        private void DrawHud(TileType selectedTile)
-        {
-            DrawRectangle(new Rectangle(0, 0, GlobalSettings.TileSize + 2, GlobalSettings.TileSize + 2), Color.Black * 0.8f);
-
-            DrawUnscaledTexture(TextureRepository.GetTileTexture(selectedTile), Vector2.Zero, 0.0f);
         }
         private void DrawMap()
         {
@@ -142,7 +95,7 @@ namespace TurnedBasedExample.View
                 }
             }
         }
-        private void DrawTile(TileType tileType, Point position)
+        protected void DrawTile(TileType tileType, Point position)
         {
             if(tileType == TileType.Water)
                 DrawWater(position);
@@ -162,12 +115,12 @@ namespace TurnedBasedExample.View
             Texture2D waterTexture = WaterLogic.GetTextureForWaterAt(map, position);
             DrawTextureAtMapLocation(waterTexture, position, 0.0f);
         }
-        private void DrawTextureAtMapLocation(Texture2D tileTexture, Point position, float rotation)
+        protected void DrawTextureAtMapLocation(Texture2D tileTexture, Point position, float rotation)
         {
             Vector2 drawLocation = GlobalSettings.ScaledTileSize * new Vector2(position.X, position.Y) - upperLeftOfView;            
             DrawTexture(tileTexture, drawLocation, rotation);
         }
-        private void DrawTexture(Texture2D tileTexture, Vector2 position, float rotation)
+        protected void DrawTexture(Texture2D tileTexture, Vector2 position, float rotation)
         {
             spriteBatch.Draw(tileTexture,
                              new Vector2(position.X, position.Y),
@@ -179,7 +132,7 @@ namespace TurnedBasedExample.View
                              SpriteEffects.None,
                              0);
         }
-        private void DrawUnscaledTexture(Texture2D tileTexture, Vector2 position, float rotation)
+        protected void DrawUnscaledTexture(Texture2D tileTexture, Vector2 position, float rotation)
         {
             spriteBatch.Draw(tileTexture,
                              new Vector2(position.X, position.Y),

@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
-using TurnBasedExample.Data;
+using MapEditor.Data;
 using Microsoft.Xna.Framework;
-using TurnedBasedExample.Data;
-using MapFileHandler;
 
-namespace TurnBasedExample.View
+namespace MapEditor.View.Repositories
 {
     static class TextureRepository
     {
@@ -111,7 +109,7 @@ namespace TurnBasedExample.View
                     return mountianShort;
                 case TileType.MountainTall:
                     return mountianTall;
-                case TileType.Forest:
+                case TileType.Tree:
                     return forest;
                 case TileType.Water:
                     return waterCenter;

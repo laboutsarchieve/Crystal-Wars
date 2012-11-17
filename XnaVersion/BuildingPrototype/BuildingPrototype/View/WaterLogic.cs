@@ -5,6 +5,7 @@ using System.Text;
 using Microsoft.Xna.Framework.Graphics;
 using MapEditor.Data;
 using Microsoft.Xna.Framework;
+using MapEditor.View.Repositories;
 
 namespace MapEditor.View
 {
