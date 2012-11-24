@@ -1,0 +1,8 @@
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\CrystalWars.exe
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\CrystalWars.pdb
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\Shared.dll
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\Shared.pdb
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\obj\x86\Debug\CrystalWars.exe
+Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\obj\x86\Debug\CrystalWars.pdb

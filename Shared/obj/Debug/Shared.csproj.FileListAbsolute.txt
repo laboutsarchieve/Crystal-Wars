@@ -1,0 +1,5 @@
+Z:\Data\C#\XNA\CrystalWars\Shared\obj\Debug\ResolveAssemblyReference.cache
+Z:\Data\C#\XNA\CrystalWars\Shared\bin\Debug\Shared.dll
+Z:\Data\C#\XNA\CrystalWars\Shared\bin\Debug\Shared.pdb
+Z:\Data\C#\XNA\CrystalWars\Shared\obj\Debug\Shared.dll
+Z:\Data\C#\XNA\CrystalWars\Shared\obj\Debug\Shared.pdb

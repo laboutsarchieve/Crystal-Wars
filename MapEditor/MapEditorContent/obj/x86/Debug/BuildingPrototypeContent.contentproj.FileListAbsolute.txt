@@ -1,0 +1,4 @@
+Z:\Data\C#\XNA\BuildingPrototype\BuildingPrototype\BuildingPrototypeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Labouts\Dropbox\Programming\C#\BuildingPrototype\BuildingPrototype\BuildingPrototypeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Users\Labouts\Dropbox\Programming\C#\BuildingPrototype\BuildingPrototype\BuildingPrototypeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Users\Labouts\Dropbox\Programming\C#\TurnBased\MapEditor\BuildingPrototype\BuildingPrototypeContent\obj\x86\Debug\ResolveAssemblyReference.cache

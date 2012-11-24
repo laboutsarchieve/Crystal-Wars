@@ -1,0 +1,1 @@
+Z:\Users\Labouts\Dropbox\Programming\C#\TurnBased\MapEditor\BuildingPrototype\BuildingPrototypeContent\obj\x86\Release\ResolveAssemblyReference.cache

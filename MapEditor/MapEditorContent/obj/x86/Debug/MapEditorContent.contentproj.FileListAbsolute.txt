@@ -1,0 +1,2 @@
+Z:\Users\Labouts\Dropbox\Programming\C#\TurnBased\MapEditor\XnaVersion\BuildingPrototype\BuildingPrototypeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditorContent\obj\x86\Debug\ResolveAssemblyReference.cache
