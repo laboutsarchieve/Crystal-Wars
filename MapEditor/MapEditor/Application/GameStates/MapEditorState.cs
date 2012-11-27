@@ -131,7 +131,7 @@ namespace MapEditor.Application.GameStates
         }
         private void LoadMap()
         {
-            Map loadedMap = MapFileManager.Load(mainGame.GraphicsDevice);
+            Map loadedMap = MapBinaryFileManager.Load();
             if(loadedMap.WidthInTiles > 1 && loadedMap.HeightInTiles > 1)
             {
                 actorDatabase.Clear();
@@ -142,7 +142,7 @@ namespace MapEditor.Application.GameStates
         }
         private void SaveMap()
         {
-            MapFileManager.Save(map, mainGame.GraphicsDevice);
+            MapBinaryFileManager.Save(map);
         }
         private void PollKeyboard(GameTime gameTime)
         {

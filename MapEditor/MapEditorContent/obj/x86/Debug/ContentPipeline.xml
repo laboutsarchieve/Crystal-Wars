@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Door.xnb</Output>
-      <Time>2012-11-16T21:26:05.3231879-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Door.xnb</Output>
+      <Time>2012-11-23T19:11:37.3797421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\Floor.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Floor.xnb</Output>
-      <Time>2012-11-16T21:26:05.324188-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Floor.xnb</Output>
+      <Time>2012-11-23T19:11:37.3797421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\Wall.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Wall.xnb</Output>
-      <Time>2012-11-16T21:26:05.325188-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Wall.xnb</Output>
+      <Time>2012-11-23T19:11:37.3807422-08:00</Time>
     </Item>
     <Item>
       <Source>maps\CircleBuilding.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\CircleBuilding.xnb</Output>
-      <Time>2012-11-16T21:26:05.3271881-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\CircleBuilding.xnb</Output>
+      <Time>2012-11-23T19:11:37.3827423-08:00</Time>
     </Item>
     <Item>
       <Source>maps\Maze.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\Maze.xnb</Output>
-      <Time>2012-11-16T21:26:05.3271881-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\Maze.xnb</Output>
+      <Time>2012-11-23T19:11:37.3827423-08:00</Time>
     </Item>
     <Item>
       <Source>maps\NormalBuilding.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\NormalBuilding.xnb</Output>
-      <Time>2012-11-16T21:26:05.3281882-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\NormalBuilding.xnb</Output>
+      <Time>2012-11-23T19:11:37.3837423-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\FullWall.png</Source>
@@ -61,8 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\FullWall.xnb</Output>
-      <Time>2012-11-16T21:26:05.324188-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\FullWall.xnb</Output>
+      <Time>2012-11-23T19:11:37.3807422-08:00</Time>
     </Item>
     <Item>
       <Source>art\actors\Soldier.png</Source>
@@ -70,8 +70,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\actors\Soldier.xnb</Output>
-      <Time>2012-11-16T21:26:05.3131873-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\actors\Soldier.xnb</Output>
+      <Time>2012-11-23T19:11:37.34274-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\Grass.png</Source>
@@ -79,8 +79,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Grass.xnb</Output>
-      <Time>2012-11-16T21:26:05.325188-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\Grass.xnb</Output>
+      <Time>2012-11-23T19:11:37.3807422-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWgrass.png</Source>
@@ -88,8 +88,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWgrass.xnb</Output>
-      <Time>2012-11-16T21:26:05.3221879-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWgrass.xnb</Output>
+      <Time>2012-11-23T19:11:37.3787421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWmountianShort.png</Source>
@@ -97,8 +97,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWmountianShort.xnb</Output>
-      <Time>2012-11-16T21:26:05.3231879-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWmountianShort.xnb</Output>
+      <Time>2012-11-23T19:11:37.3787421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWmountianTall.png</Source>
@@ -106,8 +106,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWmountianTall.xnb</Output>
-      <Time>2012-11-16T21:26:05.3231879-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWmountianTall.xnb</Output>
+      <Time>2012-11-23T19:11:37.3797421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWForest.png</Source>
@@ -115,8 +115,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWForest.xnb</Output>
-      <Time>2012-11-16T21:26:05.3141874-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWForest.xnb</Output>
+      <Time>2012-11-23T19:11:37.3437401-08:00</Time>
     </Item>
     <Item>
       <Source>maps\AWmap.png</Source>
@@ -124,8 +124,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\AWmap.xnb</Output>
-      <Time>2012-11-16T21:26:05.3261881-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\maps\AWmap.xnb</Output>
+      <Time>2012-11-23T19:11:37.3827423-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerLeft.png</Source>
@@ -133,8 +133,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeft.xnb</Output>
-      <Time>2012-11-16T21:26:05.3161875-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeft.xnb</Output>
+      <Time>2012-11-23T19:11:37.3457402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerMiddle.png</Source>
@@ -142,8 +142,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerMiddle.xnb</Output>
-      <Time>2012-11-16T21:26:05.3181876-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerMiddle.xnb</Output>
+      <Time>2012-11-23T19:11:37.3467402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerRight.png</Source>
@@ -151,8 +151,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerRight.xnb</Output>
-      <Time>2012-11-16T21:26:05.3181876-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerRight.xnb</Output>
+      <Time>2012-11-23T19:11:37.3477403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterMiddleLeft.png</Source>
@@ -160,8 +160,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterMiddleLeft.xnb</Output>
-      <Time>2012-11-16T21:26:05.3191877-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterMiddleLeft.xnb</Output>
+      <Time>2012-11-23T19:11:37.3477403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterMiddleRight.png</Source>
@@ -169,8 +169,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterMiddleRight.xnb</Output>
-      <Time>2012-11-16T21:26:05.3191877-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterMiddleRight.xnb</Output>
+      <Time>2012-11-23T19:11:37.3487403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperMiddle.png</Source>
@@ -178,8 +178,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperMiddle.xnb</Output>
-      <Time>2012-11-16T21:26:05.3211878-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperMiddle.xnb</Output>
+      <Time>2012-11-23T19:11:37.377742-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperRight.png</Source>
@@ -187,8 +187,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperRight.xnb</Output>
-      <Time>2012-11-16T21:26:05.3211878-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperRight.xnb</Output>
+      <Time>2012-11-23T19:11:37.3787421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterCenter.png</Source>
@@ -196,8 +196,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterCenter.xnb</Output>
-      <Time>2012-11-16T21:26:05.3141874-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterCenter.xnb</Output>
+      <Time>2012-11-23T19:11:37.3437401-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperLeft.png</Source>
@@ -205,8 +205,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperLeft.xnb</Output>
-      <Time>2012-11-16T21:26:05.3201877-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperLeft.xnb</Output>
+      <Time>2012-11-23T19:11:37.377742-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLeftChannelEnd.png</Source>
@@ -214,8 +214,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLeftChannelEnd.xnb</Output>
-      <Time>2012-11-16T21:26:05.3161875-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLeftChannelEnd.xnb</Output>
+      <Time>2012-11-23T19:11:37.3457402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerChannelEnd.png</Source>
@@ -223,8 +223,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerChannelEnd.xnb</Output>
-      <Time>2012-11-16T21:26:05.3161875-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerChannelEnd.xnb</Output>
+      <Time>2012-11-23T19:11:37.3457402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterRightChannelEnd.png</Source>
@@ -232,8 +232,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterRightChannelEnd.xnb</Output>
-      <Time>2012-11-16T21:26:05.3191877-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterRightChannelEnd.xnb</Output>
+      <Time>2012-11-23T19:11:37.3487403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperChannelEnd.png</Source>
@@ -241,8 +241,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperChannelEnd.xnb</Output>
-      <Time>2012-11-16T21:26:05.3201877-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperChannelEnd.xnb</Output>
+      <Time>2012-11-23T19:11:37.3487403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterChannelHorizontal.png</Source>
@@ -250,8 +250,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterChannelHorizontal.xnb</Output>
-      <Time>2012-11-16T21:26:05.3141874-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterChannelHorizontal.xnb</Output>
+      <Time>2012-11-23T19:11:37.3447401-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterChannelVertical.png</Source>
@@ -259,8 +259,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterChannelVertical.xnb</Output>
-      <Time>2012-11-16T21:26:05.3151875-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterChannelVertical.xnb</Output>
+      <Time>2012-11-23T19:11:37.3447401-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterIsland.png</Source>
@@ -268,8 +268,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterIsland.xnb</Output>
-      <Time>2012-11-16T21:26:05.3151875-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterIsland.xnb</Output>
+      <Time>2012-11-23T19:11:37.3447401-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerLeftTip copy.png</Source>
@@ -277,8 +277,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeftTip copy.xnb</Output>
-      <Time>2012-11-16T21:26:05.3171876-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeftTip copy.xnb</Output>
+      <Time>2012-11-23T19:11:37.3467402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerRightTip.png</Source>
@@ -286,8 +286,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerRightTip.xnb</Output>
-      <Time>2012-11-16T21:26:05.3181876-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerRightTip.xnb</Output>
+      <Time>2012-11-23T19:11:37.3477403-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperRightTip.png</Source>
@@ -295,8 +295,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperRightTip.xnb</Output>
-      <Time>2012-11-16T21:26:05.3221879-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperRightTip.xnb</Output>
+      <Time>2012-11-23T19:11:37.3787421-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterLowerLeftTip.png</Source>
@@ -304,8 +304,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeftTip.xnb</Output>
-      <Time>2012-11-16T21:26:05.3171876-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterLowerLeftTip.xnb</Output>
+      <Time>2012-11-23T19:11:37.3467402-08:00</Time>
     </Item>
     <Item>
       <Source>art\tiles\AWWaterUpperLeftTip.png</Source>
@@ -313,8 +313,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperLeftTip.xnb</Output>
-      <Time>2012-11-16T21:26:05.3211878-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\art\tiles\AWWaterUpperLeftTip.xnb</Output>
+      <Time>2012-11-23T19:11:37.377742-08:00</Time>
     </Item>
     <Item>
       <Source>font\DebugFont.spritefont</Source>
@@ -322,8 +322,8 @@
       <Importer>FontDescriptionImporter</Importer>
       <Processor>FontDescriptionProcessor</Processor>
       <Options>None</Options>
-      <Output>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\font\DebugFont.xnb</Output>
-      <Time>2012-11-16T21:26:05.3261881-08:00</Time>
+      <Output>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\font\DebugFont.xnb</Output>
+      <Time>2012-11-23T19:11:37.3817422-08:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -331,10 +331,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditorContent\</RootDirectory>
-      <LoggerRootDirectory>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\</LoggerRootDirectory>
-      <IntermediateDirectory>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditorContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>Z:\Data\C#\XNA\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditorContent\</RootDirectory>
+      <LoggerRootDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\</LoggerRootDirectory>
+      <IntermediateDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditorContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\MapEditor\MapEditor\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

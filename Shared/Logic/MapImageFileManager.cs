@@ -12,7 +12,7 @@ using System;
 
 namespace Shared.Logic
 {
-    static public class MapFileManager
+    static public class MapImageFileManager
     {
         private static Map loadedMap;
         private static GraphicsDevice graphics;

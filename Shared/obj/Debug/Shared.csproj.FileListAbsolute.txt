@@ -3,3 +3,8 @@ Z:\Data\C#\XNA\CrystalWars\Shared\bin\Debug\Shared.dll
 Z:\Data\C#\XNA\CrystalWars\Shared\bin\Debug\Shared.pdb
 Z:\Data\C#\XNA\CrystalWars\Shared\obj\Debug\Shared.dll
 Z:\Data\C#\XNA\CrystalWars\Shared\obj\Debug\Shared.pdb
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\Shared\bin\Debug\Shared.dll
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\Shared\bin\Debug\Shared.pdb
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\Shared\obj\Debug\ResolveAssemblyReference.cache
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\Shared\obj\Debug\Shared.dll
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\Shared\obj\Debug\Shared.pdb

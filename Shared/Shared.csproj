@@ -49,9 +49,10 @@
     <Compile Include="Data\ActorInfo.cs" />
     <Compile Include="Data\ActorType.cs" />
     <Compile Include="Data\GlobalSettings.cs" />
+    <Compile Include="Logic\MapBinaryFileHandler.cs" />
     <Compile Include="View\Drawer.cs" />
     <Compile Include="Data\Map.cs" />
-    <Compile Include="Logic\MapFileManager.cs" />
+    <Compile Include="Logic\MapImageFileManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\FontRepository.cs" />
     <Compile Include="Repositories\TextureRepository.cs" />

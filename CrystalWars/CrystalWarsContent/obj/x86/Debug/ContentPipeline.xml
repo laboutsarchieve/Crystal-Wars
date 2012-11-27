@@ -7,10 +7,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWarsContent\</RootDirectory>
-      <LoggerRootDirectory>Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\</LoggerRootDirectory>
-      <IntermediateDirectory>Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWarsContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\CrystalWars\CrystalWarsContent\</RootDirectory>
+      <LoggerRootDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\CrystalWars\CrystalWars\</LoggerRootDirectory>
+      <IntermediateDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\CrystalWars\CrystalWarsContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\CrystalWars\CrystalWars\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

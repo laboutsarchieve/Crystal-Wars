@@ -1,1 +1,2 @@
 Z:\Data\C#\XNA\CrystalWars\CrystalWars\CrystalWarsContent\obj\x86\Debug\ResolveAssemblyReference.cache
+Z:\Users\Labouts\Dropbox\Programming\C#\CrystalWars\CrystalWars\CrystalWarsContent\obj\x86\Debug\ResolveAssemblyReference.cache
